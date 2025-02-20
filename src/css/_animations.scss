@@ -44,35 +44,32 @@
     0%{
         background-color: red;
         color: black;
-        transform: scale(2);
+        transform: scale(2) rotate(45deg);
     }
     20%{
         background-color: green;
         color: white;
-        transform: scale(1);
-        transform: rotateX(60deg);
+        transform: scale(1) rotateX(200deg);
     }
     40%{
         background-color: orange;
         color: green;
-        transform: scale(3);
+        transform: scale(3) rotate(-45deg);
     }
     60%{
         background-color: yellow;
         color: blue;
-        transform: scale(2);
-        transform: rotateX(60deg);
+        transform: scale(2) rotateX(200deg);
     }
     80%{
         background-color: blueviolet;
         color: yellow;
-        transform: scale(4);
+        transform: scale(4) rotate(45deg);
     }
     100%{
         background-color: blue;
         color: white;
-        transform: scale(3);
-        transform: rotateX(60deg);
+        transform: scale(1);
     }
 }
 #animation-three{
@@ -81,4 +78,5 @@
     border-radius: 8px;
     background-color: #08667E;
     color: #F6DDCC;
+    cursor: pointer;
 }
