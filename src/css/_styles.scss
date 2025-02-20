@@ -13,9 +13,14 @@ $dark-background-color: #08667E;
     width: $width;
 }
 .animation{
-    @extend .info;
-    max-width: 250px;
-    @extend .flex-animation;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flex-animation{
+    display: flex;
+    column-gap: 1.5em;
+    justify-content: center;
 }
 
 @media (prefers-color-scheme: dark){
@@ -135,9 +140,21 @@ h3{
     margin-bottom: 2em;
     border-radius: $border-radius;
 }
+.animation{
+    background-color: lighten($background-color, 10%);
+    box-shadow: 0 0px 1px gray;
+    margin-bottom: 2em;
+    border-radius: $border-radius;
+}
 }
 @media (prefers-color-scheme: dark){
     .info{
+        background-color: darken($dark-background-color, 6%);
+        box-shadow: 0 0px 2px gray;
+        margin-bottom: 2em;
+        border-radius: $border-radius;
+    }
+    .animation{
         background-color: darken($dark-background-color, 6%);
         box-shadow: 0 0px 2px gray;
         margin-bottom: 2em;
@@ -180,6 +197,11 @@ h3{
         width: fit-content;
         padding: 2em 4.5em;
         max-width: 70ch;
+    }
+    .animation{
+        width: fit-content;
+        padding: 2em 4.5em;
+        max-width: 300px;
     }
     .smaller-screen{
         display: none;
@@ -239,6 +261,10 @@ h3{
         width: 50ch;
         padding: 1.5em 2em;
     }
+    .animation{
+        width: 250px;
+        padding: 1.5em 2em;
+    }
     #open-menu{
         height: 60px;
     }
@@ -253,6 +279,7 @@ h3{
             height:100vh;
             width:100vw;
             display: none;
+            z-index: 100;
         }
     }
     .smaller-screen {
@@ -264,6 +291,7 @@ h3{
                 text-align: center;
                 margin: 0 auto;
                 padding: 0;
+                z-index: 100;
                 }
                 li{
                     padding: 0.8em 0;
@@ -373,6 +401,11 @@ h3{
     .smaller-screen{
         display: block;
     }
+    .flex-animation{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media (min-width: 300px) and (max-width: 800px){
@@ -389,6 +422,10 @@ h3{
     }
     .info{
         width: 40ch;
+        padding: 1em 2em;
+    }
+    .animation{
+        width: 200px;
         padding: 1em 2em;
     }
     h1{
@@ -412,6 +449,7 @@ h3{
                 height:100vh;
                 width:100vw;
                 display: none;
+                z-index: 100;
             }
         }
         .smaller-screen {
@@ -423,6 +461,7 @@ h3{
                     text-align: center;
                     margin: 0 auto;
                     padding: 0;
+                    z-index: 100;
                     }
                     li{
                         padding: 0.8em 0;

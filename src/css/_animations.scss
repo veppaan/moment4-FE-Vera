@@ -20,13 +20,13 @@
         transform:scale(1);
     }
     40%{
-        transform:scale(1.5);
+        transform:scale(1.2);
     }
     50%{
         transform:scale(1);
     }
     60%{
-        transform:scale(1.5);
+        transform:scale(1.2);
     }
     70%{
         transform:scale(1);
@@ -35,7 +35,7 @@
         transform:scale(1);
     }
 }
-#animation-two{
-    display: inline-block;
-    animation: beatingHeart 1s ease-in-out alternate forwards;
+#animation-two:hover{
+    display: block;
+    animation: beatingHeart 2s ease-out infinite normal;
 }
