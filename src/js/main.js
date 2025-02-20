@@ -28,4 +28,8 @@ animationBtn.addEventListener("click", startAnimation);
 
 function startAnimation(){
     animationBtn.style.animation ="partyText 2s alternate ease-in-out"
+
+    setTimeout(() =>{
+        animationBtn.style.animation="";
+    }, 2000);
 }
