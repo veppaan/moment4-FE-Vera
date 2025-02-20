@@ -39,3 +39,46 @@
     display: block;
     animation: beatingHeart 2s ease-out infinite normal;
 }
+
+@keyframes partyText{
+    0%{
+        background-color: red;
+        color: black;
+        transform: scale(2);
+    }
+    20%{
+        background-color: green;
+        color: white;
+        transform: scale(1);
+        transform: rotateX(60deg);
+    }
+    40%{
+        background-color: orange;
+        color: green;
+        transform: scale(3);
+    }
+    60%{
+        background-color: yellow;
+        color: blue;
+        transform: scale(2);
+        transform: rotateX(60deg);
+    }
+    80%{
+        background-color: blueviolet;
+        color: yellow;
+        transform: scale(4);
+    }
+    100%{
+        background-color: blue;
+        color: white;
+        transform: scale(3);
+        transform: rotateX(60deg);
+    }
+}
+#animation-three{
+    border: 2px solid #ddd;
+    padding: 0.5em;
+    border-radius: 8px;
+    background-color: #08667E;
+    color: #F6DDCC;
+}

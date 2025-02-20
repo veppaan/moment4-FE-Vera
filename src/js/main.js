@@ -21,3 +21,11 @@ function toggleMenu(){
         navMenuEl.style.display = "none";
     }
 }
+
+let animationBtn = document.getElementById("animation-three");
+
+animationBtn.addEventListener("click", startAnimation);
+
+function startAnimation(){
+    animationBtn.style.animation ="partyText 2s alternate linear"
+}
