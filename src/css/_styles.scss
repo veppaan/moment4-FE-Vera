@@ -12,6 +12,11 @@ $dark-background-color: #08667E;
 @mixin button($width){
     width: $width;
 }
+.animation{
+    @extend .info;
+    max-width: 250px;
+    @extend .flex-animation;
+}
 
 @media (prefers-color-scheme: dark){
     $theme: true;
@@ -528,5 +533,10 @@ h3{
     }
     .menu-text{
         color: lighten($dark-font-color, 10%);
+    }
+    .flex-animation{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }

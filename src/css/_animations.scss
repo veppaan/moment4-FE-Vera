@@ -1,0 +1,41 @@
+@keyframes bouncingBall{
+    from{
+        background-color: red;
+        transform: translate(0px, 0px) ;
+    }
+    to{
+        background-color: green;
+        transform: translate(0px, -100px);
+    }
+}
+#animation-one{
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+    animation: bouncingBall 1s infinite alternate ease-in;
+}
+
+@keyframes beatingHeart{
+    0%{
+        transform:scale(1);
+    }
+    40%{
+        transform:scale(1.5);
+    }
+    50%{
+        transform:scale(1);
+    }
+    60%{
+        transform:scale(1.5);
+    }
+    70%{
+        transform:scale(1);
+    }
+    100%{
+        transform:scale(1);
+    }
+}
+#animation-two{
+    display: inline-block;
+    animation: beatingHeart 1s ease-in-out alternate forwards;
+}
